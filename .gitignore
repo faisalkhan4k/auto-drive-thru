@@ -1,0 +1,15 @@
+# Node dependencies
+node_modules/
+npm-debug.log
+
+# Environment variables (NEVER COMMIT THIS)
+.env
+.env.local
+
+# Build artifacts (Generated when you prep the frontend for production)
+dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
