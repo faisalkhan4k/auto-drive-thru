@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 
 // REPLACE THIS STRING WITH YOUR ACTUAL RENDER URL
-const BACKEND_URL = 'http://150.136.5.83:5000/'; 
+const BACKEND_URL = 'https://olive-camels-say.loca.lt'; 
 const socket = io(BACKEND_URL);
 
 export default function App() {
