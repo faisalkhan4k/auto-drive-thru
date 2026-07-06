@@ -1,0 +1,2920 @@
+[
+  {
+    "id": "ITEM_1",
+    "name": "Spicy Beef Patty Tacos",
+    "description": "A delicious spicy tacos featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "11.10",
+    "nutrition": {
+      "calories": 612,
+      "protein_g": 37,
+      "carbs_g": 58,
+      "fat_g": 44
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_2",
+    "name": "Garlic Crispy Chicken Tacos",
+    "description": "A delicious garlic tacos featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "14.15",
+    "nutrition": {
+      "calories": 419,
+      "protein_g": 47,
+      "carbs_g": 64,
+      "fat_g": 42
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_3",
+    "name": "Deluxe Bacon Salad",
+    "description": "A delicious deluxe salad featuring our signature bacon.",
+    "category": "Mains",
+    "price": "8.67",
+    "nutrition": {
+      "calories": 454,
+      "protein_g": 27,
+      "carbs_g": 78,
+      "fat_g": 12
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_4",
+    "name": "Smash Beef Patty Salad",
+    "description": "A delicious smash salad featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "10.20",
+    "nutrition": {
+      "calories": 411,
+      "protein_g": 48,
+      "carbs_g": 67,
+      "fat_g": 28
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_5",
+    "name": "Classic Grilled Fish Salad",
+    "description": "A delicious classic salad featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "13.92",
+    "nutrition": {
+      "calories": 842,
+      "protein_g": 27,
+      "carbs_g": 75,
+      "fat_g": 25
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_6",
+    "name": "Garlic Bacon Burger",
+    "description": "A delicious garlic burger featuring our signature bacon.",
+    "category": "Mains",
+    "price": "11.95",
+    "nutrition": {
+      "calories": 432,
+      "protein_g": 26,
+      "carbs_g": 76,
+      "fat_g": 24
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Burger with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_7",
+    "name": "Deluxe Beef Patty Tacos",
+    "description": "A delicious deluxe tacos featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "11.65",
+    "nutrition": {
+      "calories": 470,
+      "protein_g": 40,
+      "carbs_g": 20,
+      "fat_g": 26
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_8",
+    "name": "Spicy Grilled Fish Wrap",
+    "description": "A delicious spicy wrap featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "11.32",
+    "nutrition": {
+      "calories": 714,
+      "protein_g": 16,
+      "carbs_g": 50,
+      "fat_g": 25
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_9",
+    "name": "Spicy Beef Patty Tacos",
+    "description": "A delicious spicy tacos featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "14.32",
+    "nutrition": {
+      "calories": 438,
+      "protein_g": 31,
+      "carbs_g": 54,
+      "fat_g": 29
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_10",
+    "name": "Volcano Crispy Chicken Wrap",
+    "description": "A delicious volcano wrap featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "8.74",
+    "nutrition": {
+      "calories": 856,
+      "protein_g": 31,
+      "carbs_g": 28,
+      "fat_g": 34
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "gluten"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_11",
+    "name": "Truffle Beyond Meat Bowl",
+    "description": "A delicious truffle bowl featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "11.86",
+    "nutrition": {
+      "calories": 793,
+      "protein_g": 41,
+      "carbs_g": 79,
+      "fat_g": 30
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [
+      "soy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_12",
+    "name": "Volcano Bacon Bowl",
+    "description": "A delicious volcano bowl featuring our signature bacon.",
+    "category": "Mains",
+    "price": "10.11",
+    "nutrition": {
+      "calories": 766,
+      "protein_g": 26,
+      "carbs_g": 43,
+      "fat_g": 13
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_13",
+    "name": "Garlic Bacon Wrap",
+    "description": "A delicious garlic wrap featuring our signature bacon.",
+    "category": "Mains",
+    "price": "14.65",
+    "nutrition": {
+      "calories": 685,
+      "protein_g": 24,
+      "carbs_g": 56,
+      "fat_g": 14
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_14",
+    "name": "Classic Grilled Fish Tacos",
+    "description": "A delicious classic tacos featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "11.49",
+    "nutrition": {
+      "calories": 418,
+      "protein_g": 22,
+      "carbs_g": 78,
+      "fat_g": 27
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_15",
+    "name": "Smash Crispy Chicken Burger",
+    "description": "A delicious smash burger featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "9.28",
+    "nutrition": {
+      "calories": 478,
+      "protein_g": 43,
+      "carbs_g": 24,
+      "fat_g": 22
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Burger with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_16",
+    "name": "BBQ Crispy Chicken Salad",
+    "description": "A delicious bbq salad featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "14.19",
+    "nutrition": {
+      "calories": 660,
+      "protein_g": 35,
+      "carbs_g": 35,
+      "fat_g": 15
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_17",
+    "name": "Truffle Beef Patty Burger",
+    "description": "A delicious truffle burger featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "9.85",
+    "nutrition": {
+      "calories": 677,
+      "protein_g": 31,
+      "carbs_g": 71,
+      "fat_g": 17
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Burger with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_18",
+    "name": "Smash Crispy Chicken Wrap",
+    "description": "A delicious smash wrap featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "8.37",
+    "nutrition": {
+      "calories": 429,
+      "protein_g": 42,
+      "carbs_g": 53,
+      "fat_g": 37
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_19",
+    "name": "Double Beyond Meat Salad",
+    "description": "A delicious double salad featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "13.50",
+    "nutrition": {
+      "calories": 577,
+      "protein_g": 28,
+      "carbs_g": 22,
+      "fat_g": 14
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [
+      "soy"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_20",
+    "name": "Classic Beef Patty Salad",
+    "description": "A delicious classic salad featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "12.61",
+    "nutrition": {
+      "calories": 471,
+      "protein_g": 34,
+      "carbs_g": 69,
+      "fat_g": 13
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_21",
+    "name": "Truffle Grilled Fish Tacos",
+    "description": "A delicious truffle tacos featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "8.70",
+    "nutrition": {
+      "calories": 431,
+      "protein_g": 18,
+      "carbs_g": 28,
+      "fat_g": 16
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_22",
+    "name": "Truffle Beyond Meat Wrap",
+    "description": "A delicious truffle wrap featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "8.56",
+    "nutrition": {
+      "calories": 783,
+      "protein_g": 41,
+      "carbs_g": 40,
+      "fat_g": 24
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "soy",
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_23",
+    "name": "Volcano Beef Patty Salad",
+    "description": "A delicious volcano salad featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "11.22",
+    "nutrition": {
+      "calories": 743,
+      "protein_g": 31,
+      "carbs_g": 47,
+      "fat_g": 22
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_24",
+    "name": "Deluxe Bacon Bowl",
+    "description": "A delicious deluxe bowl featuring our signature bacon.",
+    "category": "Mains",
+    "price": "14.11",
+    "nutrition": {
+      "calories": 581,
+      "protein_g": 48,
+      "carbs_g": 72,
+      "fat_g": 43
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_25",
+    "name": "Truffle Beyond Meat Bowl",
+    "description": "A delicious truffle bowl featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "8.03",
+    "nutrition": {
+      "calories": 595,
+      "protein_g": 44,
+      "carbs_g": 50,
+      "fat_g": 43
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_26",
+    "name": "Garlic Bacon Bowl",
+    "description": "A delicious garlic bowl featuring our signature bacon.",
+    "category": "Mains",
+    "price": "12.12",
+    "nutrition": {
+      "calories": 510,
+      "protein_g": 36,
+      "carbs_g": 77,
+      "fat_g": 24
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_27",
+    "name": "Smash Bacon Burger",
+    "description": "A delicious smash burger featuring our signature bacon.",
+    "category": "Mains",
+    "price": "12.31",
+    "nutrition": {
+      "calories": 779,
+      "protein_g": 23,
+      "carbs_g": 26,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Burger with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_28",
+    "name": "Deluxe Grilled Fish Tacos",
+    "description": "A delicious deluxe tacos featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "14.55",
+    "nutrition": {
+      "calories": 642,
+      "protein_g": 49,
+      "carbs_g": 40,
+      "fat_g": 44
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "dairy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_29",
+    "name": "Double Crispy Chicken Tacos",
+    "description": "A delicious double tacos featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "11.17",
+    "nutrition": {
+      "calories": 841,
+      "protein_g": 19,
+      "carbs_g": 43,
+      "fat_g": 13
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_30",
+    "name": "Truffle Grilled Fish Wrap",
+    "description": "A delicious truffle wrap featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "11.83",
+    "nutrition": {
+      "calories": 549,
+      "protein_g": 18,
+      "carbs_g": 28,
+      "fat_g": 31
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_31",
+    "name": "Teriyaki Grilled Fish Wrap",
+    "description": "A delicious teriyaki wrap featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "12.91",
+    "nutrition": {
+      "calories": 459,
+      "protein_g": 37,
+      "carbs_g": 75,
+      "fat_g": 12
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_32",
+    "name": "Truffle Crispy Chicken Tacos",
+    "description": "A delicious truffle tacos featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "10.24",
+    "nutrition": {
+      "calories": 533,
+      "protein_g": 27,
+      "carbs_g": 27,
+      "fat_g": 28
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_33",
+    "name": "Classic Grilled Fish Tacos",
+    "description": "A delicious classic tacos featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "14.92",
+    "nutrition": {
+      "calories": 616,
+      "protein_g": 27,
+      "carbs_g": 57,
+      "fat_g": 10
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "dairy"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_34",
+    "name": "Garlic Beyond Meat Bowl",
+    "description": "A delicious garlic bowl featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "12.88",
+    "nutrition": {
+      "calories": 886,
+      "protein_g": 44,
+      "carbs_g": 49,
+      "fat_g": 41
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_35",
+    "name": "Classic Beyond Meat Tacos",
+    "description": "A delicious classic tacos featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "14.72",
+    "nutrition": {
+      "calories": 866,
+      "protein_g": 30,
+      "carbs_g": 33,
+      "fat_g": 19
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_36",
+    "name": "Garlic Bacon Salad",
+    "description": "A delicious garlic salad featuring our signature bacon.",
+    "category": "Mains",
+    "price": "9.41",
+    "nutrition": {
+      "calories": 866,
+      "protein_g": 18,
+      "carbs_g": 75,
+      "fat_g": 16
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_37",
+    "name": "Classic Beyond Meat Tacos",
+    "description": "A delicious classic tacos featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "10.88",
+    "nutrition": {
+      "calories": 620,
+      "protein_g": 41,
+      "carbs_g": 62,
+      "fat_g": 17
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [
+      "soy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_38",
+    "name": "Teriyaki Beef Patty Tacos",
+    "description": "A delicious teriyaki tacos featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "12.87",
+    "nutrition": {
+      "calories": 665,
+      "protein_g": 36,
+      "carbs_g": 24,
+      "fat_g": 26
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_39",
+    "name": "Spicy Crispy Chicken Tacos",
+    "description": "A delicious spicy tacos featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "12.22",
+    "nutrition": {
+      "calories": 899,
+      "protein_g": 45,
+      "carbs_g": 40,
+      "fat_g": 30
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_40",
+    "name": "Classic Bacon Bowl",
+    "description": "A delicious classic bowl featuring our signature bacon.",
+    "category": "Mains",
+    "price": "9.79",
+    "nutrition": {
+      "calories": 884,
+      "protein_g": 42,
+      "carbs_g": 43,
+      "fat_g": 43
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_41",
+    "name": "Volcano Grilled Fish Wrap",
+    "description": "A delicious volcano wrap featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "8.62",
+    "nutrition": {
+      "calories": 889,
+      "protein_g": 28,
+      "carbs_g": 25,
+      "fat_g": 15
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_42",
+    "name": "Classic Crispy Chicken Salad",
+    "description": "A delicious classic salad featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "11.79",
+    "nutrition": {
+      "calories": 778,
+      "protein_g": 45,
+      "carbs_g": 69,
+      "fat_g": 28
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_43",
+    "name": "Smash Beef Patty Bowl",
+    "description": "A delicious smash bowl featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "10.02",
+    "nutrition": {
+      "calories": 456,
+      "protein_g": 44,
+      "carbs_g": 76,
+      "fat_g": 20
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_44",
+    "name": "Truffle Grilled Fish Tacos",
+    "description": "A delicious truffle tacos featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "9.80",
+    "nutrition": {
+      "calories": 593,
+      "protein_g": 34,
+      "carbs_g": 57,
+      "fat_g": 32
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_45",
+    "name": "Smash Beef Patty Tacos",
+    "description": "A delicious smash tacos featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "11.76",
+    "nutrition": {
+      "calories": 858,
+      "protein_g": 34,
+      "carbs_g": 29,
+      "fat_g": 40
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_46",
+    "name": "Double Crispy Chicken Bowl",
+    "description": "A delicious double bowl featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "8.05",
+    "nutrition": {
+      "calories": 479,
+      "protein_g": 23,
+      "carbs_g": 39,
+      "fat_g": 35
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_47",
+    "name": "Truffle Grilled Fish Wrap",
+    "description": "A delicious truffle wrap featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "10.10",
+    "nutrition": {
+      "calories": 760,
+      "protein_g": 38,
+      "carbs_g": 72,
+      "fat_g": 32
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_48",
+    "name": "Garlic Beef Patty Burger",
+    "description": "A delicious garlic burger featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "9.36",
+    "nutrition": {
+      "calories": 469,
+      "protein_g": 34,
+      "carbs_g": 76,
+      "fat_g": 27
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Burger with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_49",
+    "name": "Teriyaki Crispy Chicken Salad",
+    "description": "A delicious teriyaki salad featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "14.03",
+    "nutrition": {
+      "calories": 664,
+      "protein_g": 47,
+      "carbs_g": 34,
+      "fat_g": 26
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_50",
+    "name": "Garlic Bacon Wrap",
+    "description": "A delicious garlic wrap featuring our signature bacon.",
+    "category": "Mains",
+    "price": "12.64",
+    "nutrition": {
+      "calories": 575,
+      "protein_g": 33,
+      "carbs_g": 26,
+      "fat_g": 16
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_51",
+    "name": "Volcano Bacon Wrap",
+    "description": "A delicious volcano wrap featuring our signature bacon.",
+    "category": "Mains",
+    "price": "8.15",
+    "nutrition": {
+      "calories": 838,
+      "protein_g": 25,
+      "carbs_g": 30,
+      "fat_g": 19
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_52",
+    "name": "Spicy Crispy Chicken Tacos",
+    "description": "A delicious spicy tacos featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "10.38",
+    "nutrition": {
+      "calories": 680,
+      "protein_g": 43,
+      "carbs_g": 26,
+      "fat_g": 36
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_53",
+    "name": "BBQ Crispy Chicken Salad",
+    "description": "A delicious bbq salad featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "9.67",
+    "nutrition": {
+      "calories": 600,
+      "protein_g": 47,
+      "carbs_g": 45,
+      "fat_g": 16
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_54",
+    "name": "BBQ Grilled Fish Bowl",
+    "description": "A delicious bbq bowl featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "14.68",
+    "nutrition": {
+      "calories": 823,
+      "protein_g": 38,
+      "carbs_g": 57,
+      "fat_g": 29
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_55",
+    "name": "Double Grilled Fish Burger",
+    "description": "A delicious double burger featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "8.95",
+    "nutrition": {
+      "calories": 441,
+      "protein_g": 29,
+      "carbs_g": 29,
+      "fat_g": 28
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Burger with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_56",
+    "name": "Teriyaki Bacon Burger",
+    "description": "A delicious teriyaki burger featuring our signature bacon.",
+    "category": "Mains",
+    "price": "13.90",
+    "nutrition": {
+      "calories": 688,
+      "protein_g": 49,
+      "carbs_g": 60,
+      "fat_g": 39
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Burger with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_57",
+    "name": "Double Beyond Meat Burger",
+    "description": "A delicious double burger featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "9.01",
+    "nutrition": {
+      "calories": 847,
+      "protein_g": 40,
+      "carbs_g": 31,
+      "fat_g": 19
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": true
+    },
+    "allergens": [
+      "soy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Burger with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_58",
+    "name": "Volcano Grilled Fish Wrap",
+    "description": "A delicious volcano wrap featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "8.92",
+    "nutrition": {
+      "calories": 880,
+      "protein_g": 33,
+      "carbs_g": 25,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_59",
+    "name": "Double Bacon Wrap",
+    "description": "A delicious double wrap featuring our signature bacon.",
+    "category": "Mains",
+    "price": "10.63",
+    "nutrition": {
+      "calories": 885,
+      "protein_g": 48,
+      "carbs_g": 63,
+      "fat_g": 32
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_60",
+    "name": "Classic Beef Patty Wrap",
+    "description": "A delicious classic wrap featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "10.37",
+    "nutrition": {
+      "calories": 624,
+      "protein_g": 35,
+      "carbs_g": 29,
+      "fat_g": 37
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": false,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Wrap with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_61",
+    "name": "Truffle Grilled Fish Bowl",
+    "description": "A delicious truffle bowl featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "9.87",
+    "nutrition": {
+      "calories": 715,
+      "protein_g": 46,
+      "carbs_g": 47,
+      "fat_g": 23
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish"
+    ],
+    "contact_free_status": "WARNING: Fried in shared oil vat with non-halal items.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_62",
+    "name": "Garlic Grilled Fish Salad",
+    "description": "A delicious garlic salad featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "11.50",
+    "nutrition": {
+      "calories": 808,
+      "protein_g": 18,
+      "carbs_g": 56,
+      "fat_g": 33
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_63",
+    "name": "Truffle Beyond Meat Salad",
+    "description": "A delicious truffle salad featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "9.16",
+    "nutrition": {
+      "calories": 644,
+      "protein_g": 18,
+      "carbs_g": 67,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [
+      "soy"
+    ],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_64",
+    "name": "Classic Crispy Chicken Salad",
+    "description": "A delicious classic salad featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "9.34",
+    "nutrition": {
+      "calories": 662,
+      "protein_g": 20,
+      "carbs_g": 41,
+      "fat_g": 11
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_65",
+    "name": "Truffle Grilled Fish Salad",
+    "description": "A delicious truffle salad featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "13.85",
+    "nutrition": {
+      "calories": 430,
+      "protein_g": 30,
+      "carbs_g": 47,
+      "fat_g": 21
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_66",
+    "name": "Double Bacon Tacos",
+    "description": "A delicious double tacos featuring our signature bacon.",
+    "category": "Mains",
+    "price": "11.65",
+    "nutrition": {
+      "calories": 639,
+      "protein_g": 48,
+      "carbs_g": 25,
+      "fat_g": 24
+    },
+    "dietary": {
+      "is_halal": false,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Fry Bacon in designated non-halal oil vat.",
+      "Toast bun/wrap.",
+      "Assemble Tacos with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_67",
+    "name": "Deluxe Beef Patty Bowl",
+    "description": "A delicious deluxe bowl featuring our signature beef patty.",
+    "category": "Mains",
+    "price": "10.90",
+    "nutrition": {
+      "calories": 641,
+      "protein_g": 35,
+      "carbs_g": 76,
+      "fat_g": 39
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [],
+    "contact_free_status": "Fried in dedicated Halal-only oil vat.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Beef Patty to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_68",
+    "name": "Classic Grilled Fish Bowl",
+    "description": "A delicious classic bowl featuring our signature grilled fish.",
+    "category": "Mains",
+    "price": "10.24",
+    "nutrition": {
+      "calories": 751,
+      "protein_g": 16,
+      "carbs_g": 21,
+      "fat_g": 44
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "fish",
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Toast bun/wrap.",
+      "Assemble Bowl with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_69",
+    "name": "Double Crispy Chicken Salad",
+    "description": "A delicious double salad featuring our signature crispy chicken.",
+    "category": "Mains",
+    "price": "8.93",
+    "nutrition": {
+      "calories": 722,
+      "protein_g": 49,
+      "carbs_g": 71,
+      "fat_g": 12
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": false,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "wheat",
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Grill Crispy Chicken to 165F internal temperature.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_70",
+    "name": "Double Beyond Meat Salad",
+    "description": "A delicious double salad featuring our signature beyond meat.",
+    "category": "Mains",
+    "price": "10.01",
+    "nutrition": {
+      "calories": 464,
+      "protein_g": 46,
+      "carbs_g": 74,
+      "fat_g": 22
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "soy",
+      "dairy"
+    ],
+    "contact_free_status": "Dedicated prep area used.",
+    "cooking_steps": [
+      "Sanitize workstation and verify dietary separation.",
+      "Cook Beyond Meat on designated plant-based flat top.",
+      "Toast bun/wrap.",
+      "Assemble Salad with fresh garnishes.",
+      "Quality check and package for window."
+    ]
+  },
+  {
+    "id": "ITEM_71",
+    "name": "Large Fries",
+    "description": "Freshly prepared fries.",
+    "category": "Sides",
+    "price": "3.49",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Fries in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_72",
+    "name": "Large Onion Rings",
+    "description": "Freshly prepared onion rings.",
+    "category": "Sides",
+    "price": "3.98",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Onion Rings in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_73",
+    "name": "Large Mozzarella Sticks",
+    "description": "Freshly prepared mozzarella sticks.",
+    "category": "Sides",
+    "price": "3.71",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Mozzarella Sticks in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_74",
+    "name": "Large Side Salad",
+    "description": "Freshly prepared side salad.",
+    "category": "Sides",
+    "price": "5.40",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Side Salad in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_75",
+    "name": "Large Sweet Potato Waffle Fries",
+    "description": "Freshly prepared sweet potato waffle fries.",
+    "category": "Sides",
+    "price": "3.12",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Sweet Potato Waffle Fries in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_76",
+    "name": "Large Fries",
+    "description": "Freshly prepared fries.",
+    "category": "Sides",
+    "price": "3.32",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Fries in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_77",
+    "name": "Large Onion Rings",
+    "description": "Freshly prepared onion rings.",
+    "category": "Sides",
+    "price": "3.87",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Onion Rings in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_78",
+    "name": "Large Mozzarella Sticks",
+    "description": "Freshly prepared mozzarella sticks.",
+    "category": "Sides",
+    "price": "3.83",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Mozzarella Sticks in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_79",
+    "name": "Large Side Salad",
+    "description": "Freshly prepared side salad.",
+    "category": "Sides",
+    "price": "3.45",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Side Salad in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_80",
+    "name": "Large Sweet Potato Waffle Fries",
+    "description": "Freshly prepared sweet potato waffle fries.",
+    "category": "Sides",
+    "price": "4.26",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Sweet Potato Waffle Fries in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_81",
+    "name": "Large Fries",
+    "description": "Freshly prepared fries.",
+    "category": "Sides",
+    "price": "3.25",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Fries in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_82",
+    "name": "Large Onion Rings",
+    "description": "Freshly prepared onion rings.",
+    "category": "Sides",
+    "price": "4.14",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": false,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Onion Rings in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_83",
+    "name": "Large Mozzarella Sticks",
+    "description": "Freshly prepared mozzarella sticks.",
+    "category": "Sides",
+    "price": "3.36",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy",
+      "wheat",
+      "gluten"
+    ],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Mozzarella Sticks in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_84",
+    "name": "Large Side Salad",
+    "description": "Freshly prepared side salad.",
+    "category": "Sides",
+    "price": "4.89",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Side Salad in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_85",
+    "name": "Large Sweet Potato Waffle Fries",
+    "description": "Freshly prepared sweet potato waffle fries.",
+    "category": "Sides",
+    "price": "5.59",
+    "nutrition": {
+      "calories": 350,
+      "protein_g": 4,
+      "carbs_g": 45,
+      "fat_g": 18
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "WARNING: May be fried in shared oil vat.",
+    "cooking_steps": [
+      "Drop Sweet Potato Waffle Fries in fryer for 3 minutes.",
+      "Drain, salt, and bag."
+    ]
+  },
+  {
+    "id": "ITEM_86",
+    "name": "Cola",
+    "description": "Refreshing cola.",
+    "category": "Beverages & Desserts",
+    "price": "3.02",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Cola.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_87",
+    "name": "Vanilla Shake",
+    "description": "Refreshing vanilla shake.",
+    "category": "Beverages & Desserts",
+    "price": "2.78",
+    "nutrition": {
+      "calories": 450,
+      "protein_g": 10,
+      "carbs_g": 60,
+      "fat_g": 15
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Vanilla Shake.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_88",
+    "name": "Strawberry Smoothie",
+    "description": "Refreshing strawberry smoothie.",
+    "category": "Beverages & Desserts",
+    "price": "2.75",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Strawberry Smoothie.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_89",
+    "name": "Iced Coffee",
+    "description": "Refreshing iced coffee.",
+    "category": "Beverages & Desserts",
+    "price": "2.79",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Iced Coffee.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_90",
+    "name": "Lemonade",
+    "description": "Refreshing lemonade.",
+    "category": "Beverages & Desserts",
+    "price": "4.23",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Lemonade.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_91",
+    "name": "Cola",
+    "description": "Refreshing cola.",
+    "category": "Beverages & Desserts",
+    "price": "4.86",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Cola.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_92",
+    "name": "Vanilla Shake",
+    "description": "Refreshing vanilla shake.",
+    "category": "Beverages & Desserts",
+    "price": "2.35",
+    "nutrition": {
+      "calories": 450,
+      "protein_g": 10,
+      "carbs_g": 60,
+      "fat_g": 15
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Vanilla Shake.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_93",
+    "name": "Strawberry Smoothie",
+    "description": "Refreshing strawberry smoothie.",
+    "category": "Beverages & Desserts",
+    "price": "2.78",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Strawberry Smoothie.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_94",
+    "name": "Iced Coffee",
+    "description": "Refreshing iced coffee.",
+    "category": "Beverages & Desserts",
+    "price": "3.30",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Iced Coffee.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_95",
+    "name": "Lemonade",
+    "description": "Refreshing lemonade.",
+    "category": "Beverages & Desserts",
+    "price": "2.97",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Lemonade.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_96",
+    "name": "Cola",
+    "description": "Refreshing cola.",
+    "category": "Beverages & Desserts",
+    "price": "4.46",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Cola.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_97",
+    "name": "Vanilla Shake",
+    "description": "Refreshing vanilla shake.",
+    "category": "Beverages & Desserts",
+    "price": "2.46",
+    "nutrition": {
+      "calories": 450,
+      "protein_g": 10,
+      "carbs_g": 60,
+      "fat_g": 15
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": false
+    },
+    "allergens": [
+      "dairy"
+    ],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Vanilla Shake.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_98",
+    "name": "Strawberry Smoothie",
+    "description": "Refreshing strawberry smoothie.",
+    "category": "Beverages & Desserts",
+    "price": "4.27",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Strawberry Smoothie.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_99",
+    "name": "Iced Coffee",
+    "description": "Refreshing iced coffee.",
+    "category": "Beverages & Desserts",
+    "price": "3.21",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Iced Coffee.",
+      "Cap and serve."
+    ]
+  },
+  {
+    "id": "ITEM_100",
+    "name": "Lemonade",
+    "description": "Refreshing lemonade.",
+    "category": "Beverages & Desserts",
+    "price": "2.90",
+    "nutrition": {
+      "calories": 150,
+      "protein_g": 0,
+      "carbs_g": 40,
+      "fat_g": 0
+    },
+    "dietary": {
+      "is_halal": true,
+      "is_kosher": true,
+      "is_gluten_free": true,
+      "is_vegan": true
+    },
+    "allergens": [],
+    "contact_free_status": "Prepared in dedicated beverage station.",
+    "cooking_steps": [
+      "Fill cup with base/ice.",
+      "Dispense Lemonade.",
+      "Cap and serve."
+    ]
+  }
+]

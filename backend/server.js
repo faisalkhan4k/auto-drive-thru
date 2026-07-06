@@ -1,81 +1,106 @@
+require("dotenv").config();
 const express = require("express");
 const http = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
-const mongoose = require("mongoose");
-require("dotenv").config();
+const { MongoClient, ObjectId } = require("mongodb");
+const multer = require("multer");
+const fs = require("fs");
+const path = require("path");
+const Groq = require("groq-sdk");
+const { processDriveThruInteraction } = require("./voice_intake_agent");
+const { generateAndSendReceipt } = require("./waiter_notification_agent"); // Import Waiter AI
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 const server = http.createServer(app);
-const io = new Server(server, {
-  cors: {
-    origin: "http://localhost:5173", // Standard Vite development port
-    methods: ["GET", "POST"],
-  },
-});
+const io = new Server(server, { cors: { origin: "*" } });
 
-// MongoDB Connection
-mongoose
-  .connect(process.env.MONGO_URI || "mongodb://localhost:27017/drivethru")
-  .then(() => console.log("MongoDB connected successfully"))
-  .catch((err) => console.error("MongoDB connection error:", err));
+const upload = multer({ dest: "uploads/" });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
-// Order Schema Baseline
-const OrderSchema = new mongoose.Schema({
-  items: [String],
-  customerEmail: String,
-  status: {
-    type: String,
-    enum: ["PENDING", "PREPPING", "READY", "COMPLETED"],
-    default: "PENDING",
-  },
-  createdAt: { type: Date, default: Date.now },
-});
-const Order = mongoose.model("Order", OrderSchema);
+let db;
+const mongoClient = new MongoClient(process.env.MONGO_URI);
 
-// WebSocket Orchestration
-io.on("connection", (socket) => {
-  console.log(`Client connected: ${socket.id}`);
+async function startServer() {
+  try {
+    await mongoClient.connect();
+    db = mongoClient.db("agentic-eats");
+    console.log("✅ MongoDB connected successfully");
 
-  // Listen for a new order from the Drive-Thru interface
-  socket.on("NEW_ORDER_SUBMITTED", async (orderData) => {
-    try {
-      const newOrder = new Order({
-        items: orderData.items,
-        customerEmail: orderData.customerEmail,
-        status: "PENDING",
+    app.post("/upload-audio", upload.single("audio"), async (req, res) => {
+      try {
+        console.log("🎙️ Received audio file. Renaming and transcribing...");
+
+        const originalPath = req.file.path;
+        const newPath = `${originalPath}.webm`;
+        fs.renameSync(originalPath, newPath);
+
+        const transcription = await groq.audio.transcriptions.create({
+          file: fs.createReadStream(newPath),
+          model: "whisper-large-v3",
+        });
+
+        console.log(`📝 Transcribed: "${transcription.text}"`);
+
+        const agentResponse = await processDriveThruInteraction(
+          transcription.text,
+          db,
+        );
+        fs.unlinkSync(newPath);
+        res.json(agentResponse);
+      } catch (error) {
+        console.error("❌ Audio processing error:", error);
+        res.status(500).json({ error: "Failed to process audio" });
+      }
+    });
+
+    io.on("connection", (socket) => {
+      console.log(`📡 Client connected: ${socket.id}`);
+
+      // 1. Receive Order + Email from Drive-Thru
+      socket.on("CONFIRM_ORDER", async (orderPayload) => {
+        try {
+          const newOrder = {
+            ...orderPayload,
+            status: "PENDING",
+            createdAt: new Date(),
+          };
+          const result = await db.collection("orders").insertOne(newOrder);
+          newOrder._id = result.insertedId;
+
+          io.emit("KITCHEN_ORDER_RECEIVED", newOrder);
+        } catch (error) {
+          console.error(error);
+        }
       });
-      await newOrder.save();
 
-      // Broadcast the newly created order to all connected clients (especially the Kitchen)
-      io.emit("KITCHEN_ORDER_RECEIVED", newOrder);
-    } catch (error) {
-      console.error("Error handling new order:", error);
-    }
-  });
+      // 2. Kitchen says it's done! Trigger the Waiter MCP.
+      socket.on("KITCHEN_TASK_COMPLETE", async (orderId) => {
+        try {
+          // Fetch the full order from DB to get the items and email
+          const order = await db
+            .collection("orders")
+            .findOne({ _id: new ObjectId(orderId) });
+          if (order) {
+            // Tell all screens the order is done
+            io.emit("ORDER_COMPLETED", orderId);
+            // Wake up the Waiter AI
+            await generateAndSendReceipt(order);
+          }
+        } catch (error) {
+          console.error("❌ Task Complete Error:", error);
+        }
+      });
+    });
 
-  // Listen for status changes from the Kitchen interface
-  socket.on("UPDATE_ORDER_STATUS", async ({ orderId, nextStatus }) => {
-    try {
-      const updatedOrder = await Order.findByIdAndUpdate(
-        orderId,
-        { status: nextStatus },
-        { new: true },
-      );
-      // Broadcast the update so both the drive-thru and kitchen screens update
-      io.emit("ORDER_STATUS_UPDATED", updatedOrder);
-    } catch (error) {
-      console.error("Error updating order status:", error);
-    }
-  });
+    const PORT = process.env.PORT || 5000;
+    server.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+  } catch (err) {
+    console.error("❌ Fatal Server Startup Error:", err);
+  }
+}
 
-  socket.on("disconnect", () => {
-    console.log(`Client disconnected: ${socket.id}`);
-  });
-});
-
-const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+startServer();
