@@ -1,35 +1,32 @@
-import React, { useState, useEffect, useRef } from "react";
-import { io } from "socket.io-client";
+import React, { useState, useEffect, useRef } from 'react';
+import { io } from 'socket.io-client';
 
-const socket = io("https://agentic-eats-backend.onrender.com");
+// REPLACE THIS STRING WITH YOUR ACTUAL RENDER URL
+const BACKEND_URL = 'https://agentic-eats-backend.onrender.com'; 
+const socket = io(BACKEND_URL);
 
 export default function App() {
   const [agentResponse, setAgentResponse] = useState(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [kitchenOrders, setKitchenOrders] = useState([]);
   const [isRecording, setIsRecording] = useState(false);
-  const [customerEmail, setCustomerEmail] = useState("");
-
+  const [customerEmail, setCustomerEmail] = useState('');
+  
   const mediaRecorderRef = useRef(null);
   const audioChunksRef = useRef([]);
 
   useEffect(() => {
-    socket.on("AGENT_RESPONSE", (res) => {
-      setAgentResponse(res);
-      setIsProcessing(false);
-    });
-    socket.on("KITCHEN_ORDER_RECEIVED", (newOrder) =>
-      setKitchenOrders((prev) => [...prev, newOrder]),
-    );
-
-    socket.on("ORDER_COMPLETED", (orderId) => {
-      setKitchenOrders((prev) => prev.filter((order) => order._id !== orderId));
+    socket.on('AGENT_RESPONSE', (res) => { setAgentResponse(res); setIsProcessing(false); });
+    socket.on('KITCHEN_ORDER_RECEIVED', (newOrder) => setKitchenOrders(prev => [...prev, newOrder]));
+    
+    socket.on('ORDER_COMPLETED', (orderId) => {
+      setKitchenOrders(prev => prev.filter(order => order._id !== orderId));
     });
 
-    return () => {
-      socket.off("AGENT_RESPONSE");
-      socket.off("KITCHEN_ORDER_RECEIVED");
-      socket.off("ORDER_COMPLETED");
+    return () => { 
+      socket.off('AGENT_RESPONSE'); 
+      socket.off('KITCHEN_ORDER_RECEIVED'); 
+      socket.off('ORDER_COMPLETED');
     };
   }, []);
 
@@ -38,14 +35,12 @@ export default function App() {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       const recorder = new MediaRecorder(stream);
       mediaRecorderRef.current = recorder;
-      recorder.ondataavailable = (e) => audioChunksRef.current.push(e.data);
+      recorder.ondataavailable = e => audioChunksRef.current.push(e.data);
       recorder.onstop = sendAudioToServer;
       recorder.start();
       setIsRecording(true);
     } catch (err) {
-      alert(
-        "Microphone access denied. Please allow microphone permissions in your browser.",
-      );
+      alert("Microphone access denied. Please allow microphone permissions in your browser.");
     }
   };
 
@@ -53,9 +48,7 @@ export default function App() {
     if (mediaRecorderRef.current && isRecording) {
       mediaRecorderRef.current.stop();
       setIsRecording(false);
-      mediaRecorderRef.current.stream
-        .getTracks()
-        .forEach((track) => track.stop());
+      mediaRecorderRef.current.stream.getTracks().forEach(track => track.stop());
     }
   };
 
@@ -71,7 +64,7 @@ export default function App() {
     formData.append("audio", audioBlob, "drivethru-order.webm");
 
     try {
-      const res = await fetch("http://localhost:5000/upload-audio", {
+      const res = await fetch(`${BACKEND_URL}/upload-audio`, {
         method: "POST",
         body: formData,
       });
@@ -86,16 +79,16 @@ export default function App() {
   };
 
   const handleConfirmOrder = () => {
-    if (agentResponse?.type === "ORDER_CONFIRMATION_NEEDED") {
+    if (agentResponse?.type === 'ORDER_CONFIRMATION_NEEDED') {
       const payloadWithEmail = { ...agentResponse.payload, customerEmail };
-      socket.emit("CONFIRM_ORDER", payloadWithEmail);
+      socket.emit('CONFIRM_ORDER', payloadWithEmail);
       setAgentResponse(null);
-      setCustomerEmail("");
+      setCustomerEmail('');
     }
   };
 
   const handleTaskComplete = (orderId) => {
-    socket.emit("KITCHEN_TASK_COMPLETE", orderId);
+    socket.emit('KITCHEN_TASK_COMPLETE', orderId);
   };
 
   return (
@@ -173,180 +166,103 @@ export default function App() {
       </div>
 
       <div className="grid-container">
+        
         {/* CUSTOMER DRIVE-THRU PANEL */}
         <div className="panel">
           <div className="panel-header-blue">
             <h2>🎙️ Drive-Thru Screen</h2>
-            <div style={{ opacity: 0.8, fontSize: "1.1rem", marginTop: "5px" }}>
-              For the Customer
-            </div>
+            <div style={{opacity: 0.8, fontSize: '1.1rem', marginTop: '5px'}}>For the Customer</div>
           </div>
-
+          
           <div className="panel-body">
             <div className="instruction-box">
               <h3>Step 1: Place Your Order</h3>
               <p>
-                Click and hold the big green button below, speak your order
-                naturally, and let go when you are done.
-                <br />
-                <span style={{ fontStyle: "italic", color: "#64748b" }}>
-                  (e.g., "I'd like a double burger with no cheese and some
-                  fries.")
-                </span>
+                Click and hold the big green button below, speak your order naturally, and let go when you are done. 
+                <br/><span style={{fontStyle: 'italic', color: '#64748b'}}>(e.g., "I'd like a double burger with no cheese and some fries.")</span>
               </p>
-
-              <button
+              
+              <button 
                 onMouseDown={startRecording}
                 onMouseUp={stopRecording}
                 onMouseLeave={stopRecording}
                 disabled={isProcessing}
-                className={`mic-btn ${isRecording ? "recording" : "idle"}`}
+                className={`mic-btn ${isRecording ? 'recording' : 'idle'}`}
               >
-                {isRecording
-                  ? "🔴 RECORDING... LET GO TO SEND"
-                  : isProcessing
-                    ? "⏳ THINKING..."
-                    : "🎙️ HOLD THIS BUTTON TO SPEAK"}
+                {isRecording ? "🔴 RECORDING... LET GO TO SEND" : isProcessing ? "⏳ THINKING..." : "🎙️ HOLD THIS BUTTON TO SPEAK"}
               </button>
             </div>
 
             <div className="output-box">
               <h3 className="output-title">Step 2: Review Output</h3>
-
+              
               {!agentResponse && !isProcessing && (
-                <div
-                  style={{
-                    textAlign: "center",
-                    color: "#94a3b8",
-                    fontStyle: "italic",
-                    marginTop: "50px",
-                    fontSize: "1.2rem",
-                  }}
-                >
+                <div style={{textAlign: 'center', color: '#94a3b8', fontStyle: 'italic', marginTop: '50px', fontSize: '1.2rem'}}>
                   Your order summary will appear here.
                 </div>
               )}
 
               {/* INQUIRY RESULT */}
-              {agentResponse?.type === "INQUIRY_RESULT" && (
+              {agentResponse?.type === 'INQUIRY_RESULT' && (
                 <div>
-                  <p
-                    style={{
-                      fontSize: "1.2rem",
-                      fontWeight: "bold",
-                      color: "#334155",
-                      marginBottom: "15px",
-                    }}
-                  >
-                    Here is what we found on the menu:
-                  </p>
+                  <p style={{fontSize: '1.2rem', fontWeight: 'bold', color: '#334155', marginBottom: '15px'}}>Here is what we found on the menu:</p>
                   {agentResponse.suggestions.map((item, i) => (
                     <div className="item-card" key={i}>
                       <div className="item-row">
                         <span className="item-name">{item.name}</span>
                         <span className="item-price">${item.price}</span>
                       </div>
-                      <p style={{ color: "#64748b", margin: "5px 0 0 0" }}>
-                        {item.description}
-                      </p>
+                      <p style={{color: '#64748b', margin: '5px 0 0 0'}}>{item.description}</p>
                     </div>
                   ))}
-                  <button
-                    className="btn-cancel"
-                    style={{ width: "100%", marginTop: "20px" }}
-                    onClick={() => setAgentResponse(null)}
-                  >
-                    Clear Screen
-                  </button>
+                  <button className="btn-cancel" style={{width: '100%', marginTop: '20px'}} onClick={() => setAgentResponse(null)}>Clear Screen</button>
                 </div>
               )}
 
               {/* ORDER RESULT */}
-              {agentResponse?.type === "ORDER_CONFIRMATION_NEEDED" && (
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    flexGrow: 1,
-                  }}
-                >
-                  <div
-                    style={{
-                      background: "#fefce8",
-                      border: "2px solid #fef08a",
-                      padding: "15px",
-                      borderRadius: "10px",
-                      color: "#854d0e",
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      marginBottom: "20px",
-                    }}
-                  >
+              {agentResponse?.type === 'ORDER_CONFIRMATION_NEEDED' && (
+                <div style={{display: 'flex', flexDirection: 'column', flexGrow: 1}}>
+                  <div style={{background: '#fefce8', border: '2px solid #fef08a', padding: '15px', borderRadius: '10px', color: '#854d0e', fontWeight: 'bold', textAlign: 'center', marginBottom: '20px'}}>
                     Please make sure your order looks correct!
                   </div>
-
-                  <div style={{ flexGrow: 1 }}>
+                  
+                  <div style={{flexGrow: 1}}>
                     {agentResponse.payload.items.map((item, idx) => (
-                      <div
-                        className="item-card"
-                        style={{ borderLeftColor: "#16a34a" }}
-                        key={idx}
-                      >
+                      <div className="item-card" style={{borderLeftColor: '#16a34a'}} key={idx}>
                         <div className="item-row">
                           <div>
-                            <span className="qty-badge">{item.quantity}x</span>
+                            <span className="qty-badge">{item.quantity}x</span> 
                             <span className="item-name">{item.name}</span>
                           </div>
-                          <span className="item-price">
-                            ${item.line_total.toFixed(2)}
-                          </span>
+                          <span className="item-price">${item.line_total.toFixed(2)}</span>
                         </div>
-                        {item.special_instructions &&
-                          item.special_instructions !== "none" && (
-                            <div className="mod-text">
-                              ❌ Mod: {item.special_instructions}
-                            </div>
-                          )}
+                        {item.special_instructions && item.special_instructions !== "none" && (
+                          <div className="mod-text">❌ Mod: {item.special_instructions}</div>
+                        )}
                       </div>
                     ))}
-
+                    
                     <div className="total-row">
                       <span className="total-label">Total Due:</span>
-                      <span className="total-price">
-                        ${agentResponse.payload.total_price.toFixed(2)}
-                      </span>
+                      <span className="total-price">${agentResponse.payload.total_price.toFixed(2)}</span>
                     </div>
                   </div>
-
-                  <div style={{ marginBottom: "20px" }}>
-                    <label className="input-label">
-                      Would you like an email receipt? (Optional)
-                    </label>
-                    <input
-                      type="email"
+                  
+                  <div style={{marginBottom: '20px'}}>
+                    <label className="input-label">Would you like an email receipt? (Optional)</label>
+                    <input 
+                      type="email" 
                       className="email-input"
                       placeholder="Enter your email address here..."
                       value={customerEmail}
                       onChange={(e) => setCustomerEmail(e.target.value)}
                     />
-                    <div style={{ color: "#64748b", fontSize: "0.9rem" }}>
-                      We will email you a summary when your food is ready.
-                    </div>
+                    <div style={{color: '#64748b', fontSize: '0.9rem'}}>We will email you a summary when your food is ready.</div>
                   </div>
 
                   <div className="btn-group">
-                    <button
-                      className="btn-cancel"
-                      onClick={() => setAgentResponse(null)}
-                    >
-                      Cancel Order
-                    </button>
-                    <button
-                      className="btn-confirm"
-                      onClick={handleConfirmOrder}
-                    >
-                      Looks Good! Order
-                    </button>
+                    <button className="btn-cancel" onClick={() => setAgentResponse(null)}>Cancel Order</button>
+                    <button className="btn-confirm" onClick={handleConfirmOrder}>Looks Good! Order</button>
                   </div>
                 </div>
               )}
@@ -358,32 +274,18 @@ export default function App() {
         <div className="panel">
           <div className="panel-header-orange">
             <h2>👨‍🍳 Kitchen Queue</h2>
-            <div style={{ opacity: 0.8, fontSize: "1.1rem", marginTop: "5px" }}>
-              For the Chefs & Staff
-            </div>
+            <div style={{opacity: 0.8, fontSize: '1.1rem', marginTop: '5px'}}>For the Chefs & Staff</div>
           </div>
-
-          <div className="panel-body" style={{ background: "#fff7ed" }}>
-            <p
-              style={{
-                textAlign: "center",
-                color: "#475569",
-                fontSize: "1.1rem",
-                marginBottom: "30px",
-                borderBottom: "2px solid #ffedd5",
-                paddingBottom: "20px",
-              }}
-            >
-              Confirmed orders will appear here automatically. When you have
-              finished preparing the food, click the green button to clear it
-              from your screen and notify the customer.
+          
+          <div className="panel-body" style={{background: '#fff7ed'}}>
+            <p style={{textAlign: 'center', color: '#475569', fontSize: '1.1rem', marginBottom: '30px', borderBottom: '2px solid #ffedd5', paddingBottom: '20px'}}>
+              Confirmed orders will appear here automatically. When you have finished preparing the food, click the green button to clear it from your screen and notify the customer.
             </p>
 
             {kitchenOrders.length === 0 ? (
               <div className="kitchen-empty">
-                <div style={{ fontSize: "4rem", marginBottom: "10px" }}>🍽️</div>
-                <strong>No Orders Pending</strong>
-                <br />
+                <div style={{fontSize: '4rem', marginBottom: '10px'}}>🍽️</div>
+                <strong>No Orders Pending</strong><br/>
                 Waiting for customers...
               </div>
             ) : (
@@ -392,77 +294,34 @@ export default function App() {
                   <div className="kitchen-order" key={idx}>
                     <div className="kitchen-order-header">
                       <span>Order #{order._id?.slice(-4) || idx}</span>
-                      <span>
-                        {new Date(order.createdAt).toLocaleTimeString()}
-                      </span>
+                      <span>{new Date(order.createdAt).toLocaleTimeString()}</span>
                     </div>
-
+                    
                     <div className="kitchen-order-body">
                       {order.items.map((item, i) => (
                         <div className="kitchen-item" key={i}>
-                          <span
-                            style={{
-                              background: "#ffedd5",
-                              color: "#c2410c",
-                              fontWeight: "bold",
-                              padding: "3px 8px",
-                              borderRadius: "5px",
-                              marginRight: "10px",
-                            }}
-                          >
+                          <span style={{background: '#ffedd5', color: '#c2410c', fontWeight: 'bold', padding: '3px 8px', borderRadius: '5px', marginRight: '10px'}}>
                             {item.quantity}x
-                          </span>
-                          <span
-                            style={{ fontWeight: "bold", fontSize: "1.1rem" }}
-                          >
-                            {item.name}
-                          </span>
-
-                          {item.special_instructions &&
-                            item.special_instructions !== "none" && (
-                              <div
-                                style={{
-                                  color: "#dc2626",
-                                  fontWeight: "bold",
-                                  fontSize: "0.9rem",
-                                  marginTop: "5px",
-                                  display: "flex",
-                                  alignItems: "center",
-                                }}
-                              >
-                                <span
-                                  style={{
-                                    background: "#fee2e2",
-                                    padding: "2px 6px",
-                                    borderRadius: "4px",
-                                    marginRight: "8px",
-                                    fontSize: "0.8rem",
-                                  }}
-                                >
-                                  MODIFICATION
-                                </span>
-                                {item.special_instructions}
-                              </div>
-                            )}
+                          </span> 
+                          <span style={{fontWeight: 'bold', fontSize: '1.1rem'}}>{item.name}</span>
+                          
+                          {item.special_instructions && item.special_instructions !== "none" && (
+                            <div style={{color: '#dc2626', fontWeight: 'bold', fontSize: '0.9rem', marginTop: '5px', display: 'flex', alignItems: 'center'}}>
+                              <span style={{background: '#fee2e2', padding: '2px 6px', borderRadius: '4px', marginRight: '8px', fontSize: '0.8rem'}}>MODIFICATION</span> 
+                              {item.special_instructions}
+                            </div>
+                          )}
                         </div>
                       ))}
-
-                      <button
+                      
+                      <button 
                         className="btn-complete"
                         onClick={() => handleTaskComplete(order._id)}
                       >
                         ✅ Mark Order as Prepared
                       </button>
                       {order.customerEmail && (
-                        <div
-                          style={{
-                            textAlign: "center",
-                            color: "#64748b",
-                            fontSize: "0.9rem",
-                            marginTop: "10px",
-                            fontStyle: "italic",
-                          }}
-                        >
+                        <div style={{textAlign: 'center', color: '#64748b', fontSize: '0.9rem', marginTop: '10px', fontStyle: 'italic'}}>
                           An email receipt will be sent automatically.
                         </div>
                       )}
@@ -473,6 +332,7 @@ export default function App() {
             )}
           </div>
         </div>
+
       </div>
     </div>
   );
