@@ -10,7 +10,7 @@ const path = require('path');
 const os = require('os'); // Added OS module to find the safe Temp directory
 const Groq = require('groq-sdk');
 const { processDriveThruInteraction } = require('./voice_intake_agent');
-const { generateAndSendReceipt } = require('./notification_agent');
+const { generateAndSendReceipt } = require('./waiter_notification_agent');
 
 const app = express();
 app.use(cors());
