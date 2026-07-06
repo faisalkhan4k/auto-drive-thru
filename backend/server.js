@@ -12,11 +12,21 @@ const Groq = require('groq-sdk');
 const { processDriveThruInteraction } = require('./voice_intake_agent');
 const { generateAndSendReceipt } = require('./waiter_notification_agent');
 
+const https = require('https'); // 1. Add this
+
+// ... (your existing imports)
+
+// 2. Load the certs
+const options = {
+  key: fs.readFileSync(path.join(__dirname, '../certs/key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, '../certs/cert.pem'))
+};
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const server = http.createServer(app);
+// const server = http.createServer(app);
+const server = https.createServer(options, app);
 const io = new Server(server, { cors: { origin: "*" } });
 
 // FIX: Use the cloud server's secure temporary directory instead of an 'uploads' folder
